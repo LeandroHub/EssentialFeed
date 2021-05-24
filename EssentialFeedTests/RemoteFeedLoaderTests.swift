@@ -16,7 +16,7 @@ class RemoteFeedLoaderTests: XCTestCase {
         XCTAssertNil(client.requestedURL)
     }
 
-    func test_load_requestDataFromURL() {
+    func test_load_requestsDataFromURL() {
         let url = URL(string: "https://a-given-url.com")!
         // The url is a detail of the implementation of the remote feed loader: it should not be in the public interface
         // (because the load method can be loading from other places as well, such as cache or multiple locations)
