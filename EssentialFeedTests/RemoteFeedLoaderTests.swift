@@ -28,6 +28,19 @@ class RemoteFeedLoaderTests: XCTestCase {
         XCTAssertEqual(client.requestedURL, url)
     }
     
+    func test_loadTwice_requestsDataFromURLTwice() {
+        let url = URL(string: "https://a-given-url.com")!
+        let (sut, client) = makeSUT(url: url)
+        
+        sut.load()
+        sut.load()
+        
+        // We will assert order, quality and count
+        // We will prevent having `client.get(from:url)` called twice
+        // We will also allow the `load` method to be invoked x times because we may want to make a bunch of API requests
+        XCTAssertEqual(client.requestedURLs, [url, url])
+    }
+    
     // MARK: - Helpers
     
     // Let's create a factory method to avoid duplications
@@ -41,9 +54,11 @@ class RemoteFeedLoaderTests: XCTestCase {
     // We move the HTTPClientSpy inside the tests scope: it's not going to be production code
     private class HTTPClientSpy: HTTPClient {
         var requestedURL: URL?
+        var requestedURLs = [URL]()
         
         func get(from url: URL) {
             requestedURL = url
+            requestedURLs.append(url)
         }
     }
 }
