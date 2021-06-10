@@ -43,7 +43,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     
     func test_load_deliversErrorOnClientError() {
         let (sut, client) = makeSUT()
-        client.error = NSError(domain: "Test", code: 0)
+        client.error = NSError(domain: "Test", code: 0) // stubbing
         
         var capturedError = [RemoteFeedLoader.Error]()
         sut.load {
