@@ -22,7 +22,7 @@ class RemoteFeedLoaderTests: XCTestCase {
         // (because the load method can be loading from other places as well, such as cache or multiple locations)
         let (sut, client) = makeSUT(url: url)
         
-        sut.load()
+        sut.load { _ in }
         
         // We need to assert that the client will request the same url as the remote feed loader will have
         XCTAssertEqual(client.requestedURLs, [url])
@@ -32,8 +32,8 @@ class RemoteFeedLoaderTests: XCTestCase {
         let url = URL(string: "https://a-given-url.com")!
         let (sut, client) = makeSUT(url: url)
         
-        sut.load()
-        sut.load()
+        sut.load { _ in }
+        sut.load { _ in }
         
         // We will assert order, quality and count
         // We will prevent having `client.get(from:url)` called twice
