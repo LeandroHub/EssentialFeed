@@ -92,6 +92,7 @@ class RemoteFeedLoaderTests: XCTestCase {
         }
         
         func get(from url: URL, completion: @escaping (HTTPClientResult) -> Void) {
+            // No more pre-defined behavior. Now, it'sup to the consumers of the spy to do something with the captured completion closures. 
             messages.append((url, completion))
         }
         
