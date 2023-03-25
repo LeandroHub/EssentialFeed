@@ -15,6 +15,7 @@
 		363E88B529CCDE650077E089 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363E88B429CCDE650077E089 /* RemoteFeedLoaderTests.swift */; };
 		363E88B829CD2CE60077E089 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363E88B729CD2CE60077E089 /* RemoteFeedLoader.swift */; };
 		363E88BA29CFAECB0077E089 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363E88B929CFAECB0077E089 /* HTTPClient.swift */; };
+		363E88BC29CFAF220077E089 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363E88BB29CFAF220077E089 /* FeedItemsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		363E88B429CCDE650077E089 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		363E88B729CD2CE60077E089 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		363E88B929CFAECB0077E089 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		363E88BB29CFAF220077E089 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				363E88B729CD2CE60077E089 /* RemoteFeedLoader.swift */,
 				363E88B929CFAECB0077E089 /* HTTPClient.swift */,
+				363E88BB29CFAF220077E089 /* FeedItemsMapper.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				363E88B829CD2CE60077E089 /* RemoteFeedLoader.swift in Sources */,
 				363E88BA29CFAECB0077E089 /* HTTPClient.swift in Sources */,
 				363E88B229CA927B0077E089 /* FeedLoader.swift in Sources */,
+				363E88BC29CFAF220077E089 /* FeedItemsMapper.swift in Sources */,
 				363E88B029CA7B450077E089 /* FeedItem.swift in Sources */,
 				363E889A29CA7A9B0077E089 /* EssentialFeed.docc in Sources */,
 			);
