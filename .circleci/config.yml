@@ -1,5 +1,42 @@
 version: 2.1
 
+orbs:
+  xcode: circleci/xcode@4.4.0
+
+jobs:
+  build-and-test:
+    macos:
+      xcode: "14.3.0"
+    steps:
+      - checkout
+      - xcode/checkout-bundle:
+          version: "1.1.2"
+      - xcode/configure-ios:
+          version: "1.0.3"
+          xcode_version: "14.3.0"
+          project: "EssentialFeed.xcodeproj"
+          scheme: "CI"
+      - run:
+          name: "Build and Test Project"
+          command: |
+            set -o pipefail && xcodebuild clean build test \
+              -project "EssentialFeed.xcodeproj" \
+              -scheme "CI" \
+              CODE_SIGNING_IDENTITY="" \
+              CODE_SIGNING_REQUIRED=NO \
+              | xcpretty -c
+      - store_artifacts:
+          path: "build/reports"
+          destination: "reports"
+
+workflows:
+    build-and-test:
+    jobs:
+      - build-and-test
+
+
+version: 2.1
+
 jobs:
   build-and-test:
     macos:
