@@ -1,29 +1,14 @@
 version: 2.1
 
-# Define the jobs we want to run for this project
 jobs:
-  build:
-    docker:
-      - image: cimg/base:2023.03
+  build-and-test:
+    macos:
+      xcode: "14.3"
     steps:
       - checkout
-      - run: xcodebuild clean build -project EssentialFeed.xcodeproj -scheme "CI" CODE_SIGNING_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-  test:
-    docker:
-      - image: cimg/base:2023.03
-    steps:
-      - checkout
-      - run: xcodebuild clean test -project EssentialFeed.xcodeproj -scheme "CI" CODE_SIGNING_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+      - run: xcodebuild clean build test -project EssentialFeed.xcodeproj -scheme "CI" CODE_SIGNING_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
-# Orchestrate our job run sequence
 workflows:
   build_and_test:
     jobs:
-      - build
-      - test
-
-
-#os: osx
-#osx_image: xcode14.2
-#language: swift
-#script: xcodebuild clean build test -project EssentialFeed.xcodeproj -scheme "CI" CODE_SIGNING_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+      - build_and_test
