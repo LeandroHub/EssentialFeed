@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  xcode: circleci/xcode@4.9.0
+  xcode: circleci/macos@2.3.4
 
 jobs:
   build-and-test:
