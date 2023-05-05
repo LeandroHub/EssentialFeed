@@ -35,7 +35,10 @@ final class EssentialFeedAPIEndToEndTests: XCTestCase {
 
     private func getFeedResult(file: StaticString = #file, line: UInt = #line) -> LoadFeedResult? {
         let testServerURL = URL(string: "https://essentialdeveloper.com/feed-case-study/test-api/feed")!
-        let client = URLSessionHTTPClient()
+        // The default directory when running tests is /Users/{your-user-name}/Library/Caches/com.apple.dt.xctest.tool
+        // If we leave those artifacts, there might be shared states when rerunning the tests
+        // That's why we use `ephemeral` here as the session configuration
+        let client = URLSessionHTTPClient(session: URLSession(configuration: .ephemeral))
         let loader = RemoteFeedLoader(url: testServerURL, client: client)
         trackForMemoryLeaks(client, file: file, line: line)
         trackForMemoryLeaks(loader, file: file, line: line)
