@@ -116,7 +116,7 @@ final class CodableFeedStoreTests: XCTestCase {
     }
 
     func test_delete_deliversErrorOnDeletionError() {
-        let noDeletePermissionURL = cachesDirectory()
+        let noDeletePermissionURL = FileManager.default.urls(for: .cachesDirectory, in: .systemDomainMask).first!
         let sut = makeSUT(storeURL: noDeletePermissionURL)
 
         let deletionError = deleteCache(from: sut)
