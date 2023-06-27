@@ -41,6 +41,7 @@
 		36F935382A4B57B4004E6F0D /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F935372A4B57B4004E6F0D /* XCTestCase+FailableInsertFeedStoreSpecs.swift */; };
 		36F9353A2A4B58D9004E6F0D /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F935392A4B58D9004E6F0D /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */; };
 		36F9353D2A4B9E74004E6F0D /* CoreDataFeedStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9353C2A4B9E74004E6F0D /* CoreDataFeedStoreTests.swift */; };
+		36F9353F2A4B9F20004E6F0D /* CoreDataFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9353E2A4B9F20004E6F0D /* CoreDataFeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		36F935372A4B57B4004E6F0D /* XCTestCase+FailableInsertFeedStoreSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableInsertFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		36F935392A4B58D9004E6F0D /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableDeleteFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		36F9353C2A4B9E74004E6F0D /* CoreDataFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedStoreTests.swift; sourceTree = "<group>"; };
+		36F9353E2A4B9F20004E6F0D /* CoreDataFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +246,7 @@
 				365700F92A166941000EE52E /* LocalFeedImage.swift */,
 				36E966282A3B9D550001A113 /* FeedCachePolicy.swift */,
 				3656CF792A42AAFF00BF6A2C /* CodableFeedStore.swift */,
+				36F9353E2A4B9F20004E6F0D /* CoreDataFeedStore.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				363E88B829CD2CE60077E089 /* RemoteFeedLoader.swift in Sources */,
 				363E88BA29CFAECB0077E089 /* HTTPClient.swift in Sources */,
 				363E88B229CA927B0077E089 /* FeedLoader.swift in Sources */,
+				36F9353F2A4B9F20004E6F0D /* CoreDataFeedStore.swift in Sources */,
 				363E88BC29CFAF220077E089 /* FeedItemsMapper.swift in Sources */,
 				365700F82A1668FF000EE52E /* RemoteFeedItem.swift in Sources */,
 				3656CF7A2A42AAFF00BF6A2C /* CodableFeedStore.swift in Sources */,
