@@ -70,7 +70,9 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
     }
 
     func test_delete_emptiesPreviouslyInsertedCache() {
+        let sut = makeSUT()
 
+        assertDeleteEmptiesPreviouslyInsertedCache(on: sut)
     }
 
     func test_storiesSideEffects_runSerially() {
