@@ -151,7 +151,7 @@ extension FeedStoreSpecs where Self: XCTestCase {
                 (.failure, .failure):
                 break
 
-            case let (.success(.some(expectedFeed, expectedTimestamp)), .success(.some(retrievedFeed, retrievedTimestamp))):
+            case let (.success(.some((expectedFeed, expectedTimestamp))), .success(.some((retrievedFeed, retrievedTimestamp)))):
                 XCTAssertEqual(retrievedFeed, expectedFeed, file: file, line: line)
                 XCTAssertEqual(retrievedTimestamp, expectedTimestamp, file: file, line: line)
 
