@@ -55,6 +55,7 @@
 		36FD4E0C2A584AC7000B2024 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E889529CA7A9B0077E089 /* EssentialFeed.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36FD4E112A584BF8000B2024 /* XCTTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367C43AB29D511B3008CFC31 /* XCTTestCase+MemoryLeakTracking.swift */; };
 		36FD4E132A586849000B2024 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD4E122A586849000B2024 /* FeedViewController.swift */; };
+		36FD4E152A58B4C4000B2024 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD4E142A58B4C4000B2024 /* FeedImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +157,7 @@
 		36F9354A2A4C9BB1004E6F0D /* ManagedFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedFeedImage.swift; sourceTree = "<group>"; };
 		36FD4E082A57A960000B2024 /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 		36FD4E122A586849000B2024 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		36FD4E142A58B4C4000B2024 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				36FD4E122A586849000B2024 /* FeedViewController.swift */,
+				36FD4E142A58B4C4000B2024 /* FeedImageCell.swift */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
@@ -688,6 +691,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FD4E132A586849000B2024 /* FeedViewController.swift in Sources */,
+				36FD4E152A58B4C4000B2024 /* FeedImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
