@@ -59,6 +59,7 @@
 		36FD4E172A5A1B02000B2024 /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD4E162A5A1B01000B2024 /* UIView+Shimmering.swift */; };
 		36FD4E1A2A5C7483000B2024 /* FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD4E192A5C7483000B2024 /* FeedImageDataLoader.swift */; };
 		36FD4E1F2A5C7628000B2024 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD4E1E2A5C7628000B2024 /* UIImage+TestHelpers.swift */; };
+		36FD4E222A5C7683000B2024 /* UIRefreshControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD4E212A5C7683000B2024 /* UIRefreshControl+TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +165,7 @@
 		36FD4E162A5A1B01000B2024 /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
 		36FD4E192A5C7483000B2024 /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 		36FD4E1E2A5C7628000B2024 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
+		36FD4E212A5C7683000B2024 /* UIRefreshControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+TestHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +455,7 @@
 			isa = PBXGroup;
 			children = (
 				36FD4E1E2A5C7628000B2024 /* UIImage+TestHelpers.swift */,
+				36FD4E212A5C7683000B2024 /* UIRefreshControl+TestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FD4E112A584BF8000B2024 /* XCTTestCase+MemoryLeakTracking.swift in Sources */,
+				36FD4E222A5C7683000B2024 /* UIRefreshControl+TestHelpers.swift in Sources */,
 				36FD4E092A57A960000B2024 /* FeedViewControllerTests.swift in Sources */,
 				36FD4E1F2A5C7628000B2024 /* UIImage+TestHelpers.swift in Sources */,
 			);
