@@ -315,7 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				367114B02A55E3B9001A7C46 /* EssentialFeediOS.xctestplan */,
-				36FD4E082A57A960000B2024 /* FeedViewControllerTests.swift */,
+				36FD4E272A5C782C000B2024 /* Controllers */,
 				36FD4E202A5C762D000B2024 /* Helpers */,
 			);
 			path = EssentialFeediOSTests;
@@ -464,6 +464,14 @@
 				36FD4E252A5C776A000B2024 /* UIControl+TestHelpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		36FD4E272A5C782C000B2024 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				36FD4E082A57A960000B2024 /* FeedViewControllerTests.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
