@@ -67,6 +67,7 @@
 		36FD4E2D2A5C7978000B2024 /* FeedViewControllerTests+LoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD4E2C2A5C7978000B2024 /* FeedViewControllerTests+LoaderSpy.swift */; };
 		36FD4E2F2A5C79E2000B2024 /* FeedViewControllerTests+Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD4E2E2A5C79E2000B2024 /* FeedViewControllerTests+Assertions.swift */; };
 		36FD4E312A5C7AC9000B2024 /* FeedRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD4E302A5C7AC9000B2024 /* FeedRefreshViewController.swift */; };
+		36FD4E332A5C8968000B2024 /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD4E322A5C8968000B2024 /* FeedImageCellController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +181,7 @@
 		36FD4E2C2A5C7978000B2024 /* FeedViewControllerTests+LoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTests+LoaderSpy.swift"; sourceTree = "<group>"; };
 		36FD4E2E2A5C79E2000B2024 /* FeedViewControllerTests+Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedViewControllerTests+Assertions.swift"; sourceTree = "<group>"; };
 		36FD4E302A5C7AC9000B2024 /* FeedRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRefreshViewController.swift; sourceTree = "<group>"; };
+		36FD4E322A5C8968000B2024 /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +455,7 @@
 			children = (
 				36FD4E122A586849000B2024 /* FeedViewController.swift */,
 				36FD4E302A5C7AC9000B2024 /* FeedRefreshViewController.swift */,
+				36FD4E322A5C8968000B2024 /* FeedImageCellController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -776,6 +779,7 @@
 				36FD4E172A5A1B02000B2024 /* UIView+Shimmering.swift in Sources */,
 				36FD4E132A586849000B2024 /* FeedViewController.swift in Sources */,
 				36FD4E152A58B4C4000B2024 /* FeedImageCell.swift in Sources */,
+				36FD4E332A5C8968000B2024 /* FeedImageCellController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
