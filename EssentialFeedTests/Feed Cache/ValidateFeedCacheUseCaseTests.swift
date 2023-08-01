@@ -70,17 +70,6 @@ final class ValidateFeedCacheUseCaseTests: XCTestCase {
         XCTAssertEqual(store.receivedMessages, [.retrieve, .deleteCachedFeed])
     }
 
-    func test_validateCache_doesNotDeleteInvalidCacheAfterSUTInstanceHasBeenDeallocated() {
-        let store = FeedStoreSpy()
-        var sut: LocalFeedLoader? = LocalFeedLoader(store: store, currentDate: Date.init)
-
-        sut?.validateCache { _ in }
-        sut = nil
-        store.completeRetrieval(with: anyNSError())
-
-        XCTAssertEqual(store.receivedMessages, [.retrieve])
-    }
-
     func test_validateCache_failsOnDeletionErrorOfFailedRetrieval() {
         let (sut, store) = makeSUT()
         let deletionError = anyNSError()
@@ -106,6 +95,28 @@ final class ValidateFeedCacheUseCaseTests: XCTestCase {
         expect(sut, toCompleteWith: .success(()), when: {
             store.completeRetrievalWithEmptyCache()
         })
+    }
+
+    func test_validateCache_succeedsOnNonExpiredCache() {
+        let feed = uniqueImageFeed()
+        let fixedCurrentDate = Date()
+        let nonExpiredTimestamp = fixedCurrentDate.minusFeedCacheMaxAge().adding(seconds: 1)
+        let (sut, store) = makeSUT(currentDate: { fixedCurrentDate })
+
+        expect(sut, toCompleteWith: .success(()), when: {
+            store.completeRetrieval(with: feed.local, timestamp: nonExpiredTimestamp)
+        })
+    }
+
+    func test_validateCache_doesNotDeleteInvalidCacheAfterSUTInstanceHasBeenDeallocated() {
+        let store = FeedStoreSpy()
+        var sut: LocalFeedLoader? = LocalFeedLoader(store: store, currentDate: Date.init)
+
+        sut?.validateCache { _ in }
+        sut = nil
+        store.completeRetrieval(with: anyNSError())
+
+        XCTAssertEqual(store.receivedMessages, [.retrieve])
     }
 
     // MARK: - Helpers
