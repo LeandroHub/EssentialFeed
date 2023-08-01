@@ -24,7 +24,7 @@ extension LocalFeedImageDataLoader {
 
     public func save(_ data: Data, for url: URL, completion: @escaping (SaveResult) -> Void) {
         store.insert(data, for: url) { result in
-            completion(.failure(SaveError.failed))
+            completion(result.mapError { _ in SaveError.failed })
         }
     }
 }
@@ -56,8 +56,6 @@ extension LocalFeedImageDataLoader: FeedImageDataLoader {
             completion = nil
         }
     }
-
-
 
     public func loadImageData(from url: URL, completion: @escaping (FeedImageDataLoader.Result) -> Void) -> FeedImageDataLoaderTask {
         let task = LoadImageDataTask(completion)
