@@ -180,6 +180,7 @@
 		365F26E92A797A0000213670 /* FeedImageDataStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStoreSpy.swift; sourceTree = "<group>"; };
 		365F26EB2A797A8D00213670 /* CacheFeedImageDataUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedImageDataUseCaseTests.swift; sourceTree = "<group>"; };
 		365F26ED2A7981AA00213670 /* CoreDataFeedImageDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedImageDataStoreTests.swift; sourceTree = "<group>"; };
+		365F26EF2A799FE300213670 /* FeedStore2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedStore2.xcdatamodel; sourceTree = "<group>"; };
 		365F670C2A32549000A7A297 /* FeedCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCacheTestHelpers.swift; sourceTree = "<group>"; };
 		365F670E2A325A7900A7A297 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		366B07FA2A671CCE006D675A /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
@@ -1533,9 +1534,10 @@
 		36F935402A4BA516004E6F0D /* FeedStore.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				365F26EF2A799FE300213670 /* FeedStore2.xcdatamodel */,
 				36F935412A4BA516004E6F0D /* FeedStore.xcdatamodel */,
 			);
-			currentVersion = 36F935412A4BA516004E6F0D /* FeedStore.xcdatamodel */;
+			currentVersion = 365F26EF2A799FE300213670 /* FeedStore2.xcdatamodel */;
 			path = FeedStore.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
