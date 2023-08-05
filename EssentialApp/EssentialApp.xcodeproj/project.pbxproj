@@ -13,13 +13,16 @@
 		36851CE82A7ABF750045883B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36851CE62A7ABF750045883B /* Main.storyboard */; };
 		36851CEA2A7ABF770045883B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36851CE92A7ABF770045883B /* Assets.xcassets */; };
 		36851CED2A7ABF770045883B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36851CEB2A7ABF770045883B /* LaunchScreen.storyboard */; };
-		36851CF82A7ABF770045883B /* EssentialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36851CF72A7ABF770045883B /* EssentialAppTests.swift */; };
-		36851D022A7ABF770045883B /* EssentialAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36851D012A7ABF770045883B /* EssentialAppUITests.swift */; };
-		36851D042A7ABF770045883B /* EssentialAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36851D032A7ABF770045883B /* EssentialAppUITestsLaunchTests.swift */; };
 		36851D132A7AC1AA0045883B /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36851D112A7AC1AA0045883B /* EssentialFeed.framework */; };
 		36851D142A7AC1AA0045883B /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36851D112A7AC1AA0045883B /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36851D152A7AC1AA0045883B /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36851D122A7AC1AA0045883B /* EssentialFeediOS.framework */; };
 		36851D162A7AC1AA0045883B /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36851D122A7AC1AA0045883B /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36851D192A7ADD790045883B /* FeedLoaderWithFallbackCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36851D182A7ADD790045883B /* FeedLoaderWithFallbackCompositeTests.swift */; };
+		36851D1B2A7DAD960045883B /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36851D1A2A7DAD960045883B /* FeedLoaderWithFallbackComposite.swift */; };
+		36851D1D2A7DAE340045883B /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36851D1C2A7DAE340045883B /* FeedImageDataLoaderWithFallbackCompositeTests.swift */; };
+		36851D1F2A7EE12A0045883B /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36851D1E2A7EE12A0045883B /* FeedImageDataLoaderWithFallbackComposite.swift */; };
+		36851D212A7EE1C30045883B /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36851D202A7EE1C30045883B /* XCTestCase+MemoryLeakTracking.swift */; };
+		36851D242A7EE25F0045883B /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36851D232A7EE25F0045883B /* SharedTestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,12 +67,15 @@
 		36851CEC2A7ABF770045883B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36851CEE2A7ABF770045883B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36851CF32A7ABF770045883B /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		36851CF72A7ABF770045883B /* EssentialAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppTests.swift; sourceTree = "<group>"; };
 		36851CFD2A7ABF770045883B /* EssentialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		36851D012A7ABF770045883B /* EssentialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITests.swift; sourceTree = "<group>"; };
-		36851D032A7ABF770045883B /* EssentialAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		36851D112A7AC1AA0045883B /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36851D122A7AC1AA0045883B /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36851D182A7ADD790045883B /* FeedLoaderWithFallbackCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackCompositeTests.swift; sourceTree = "<group>"; };
+		36851D1A2A7DAD960045883B /* FeedLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
+		36851D1C2A7DAE340045883B /* FeedImageDataLoaderWithFallbackCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackCompositeTests.swift; sourceTree = "<group>"; };
+		36851D1E2A7EE12A0045883B /* FeedImageDataLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
+		36851D202A7EE1C30045883B /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		36851D232A7EE25F0045883B /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +110,6 @@
 			children = (
 				36851CDF2A7ABF750045883B /* EssentialApp */,
 				36851CF62A7ABF770045883B /* EssentialAppTests */,
-				36851D002A7ABF770045883B /* EssentialAppUITests */,
 				36851CDE2A7ABF750045883B /* Products */,
 				36851D102A7AC1AA0045883B /* Frameworks */,
 			);
@@ -130,6 +135,8 @@
 				36851CE92A7ABF770045883B /* Assets.xcassets */,
 				36851CEB2A7ABF770045883B /* LaunchScreen.storyboard */,
 				36851CEE2A7ABF770045883B /* Info.plist */,
+				36851D1A2A7DAD960045883B /* FeedLoaderWithFallbackComposite.swift */,
+				36851D1E2A7EE12A0045883B /* FeedImageDataLoaderWithFallbackComposite.swift */,
 			);
 			path = EssentialApp;
 			sourceTree = "<group>";
@@ -137,18 +144,11 @@
 		36851CF62A7ABF770045883B /* EssentialAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				36851CF72A7ABF770045883B /* EssentialAppTests.swift */,
+				36851D182A7ADD790045883B /* FeedLoaderWithFallbackCompositeTests.swift */,
+				36851D1C2A7DAE340045883B /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
+				36851D222A7EE1CB0045883B /* Helpers */,
 			);
 			path = EssentialAppTests;
-			sourceTree = "<group>";
-		};
-		36851D002A7ABF770045883B /* EssentialAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				36851D012A7ABF770045883B /* EssentialAppUITests.swift */,
-				36851D032A7ABF770045883B /* EssentialAppUITestsLaunchTests.swift */,
-			);
-			path = EssentialAppUITests;
 			sourceTree = "<group>";
 		};
 		36851D102A7AC1AA0045883B /* Frameworks */ = {
@@ -158,6 +158,15 @@
 				36851D122A7AC1AA0045883B /* EssentialFeediOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36851D222A7EE1CB0045883B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				36851D202A7EE1C30045883B /* XCTestCase+MemoryLeakTracking.swift */,
+				36851D232A7EE25F0045883B /* SharedTestHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +241,7 @@
 					};
 					36851CF22A7ABF770045883B = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 						TestTargetID = 36851CDC2A7ABF750045883B;
 					};
 					36851CFC2A7ABF770045883B = {
@@ -294,7 +304,9 @@
 			files = (
 				36851CE52A7ABF750045883B /* ViewController.swift in Sources */,
 				36851CE12A7ABF750045883B /* AppDelegate.swift in Sources */,
+				36851D1B2A7DAD960045883B /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				36851CE32A7ABF750045883B /* SceneDelegate.swift in Sources */,
+				36851D1F2A7EE12A0045883B /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +314,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36851CF82A7ABF770045883B /* EssentialAppTests.swift in Sources */,
+				36851D242A7EE25F0045883B /* SharedTestHelpers.swift in Sources */,
+				36851D1D2A7DAE340045883B /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
+				36851D192A7ADD790045883B /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
+				36851D212A7EE1C30045883B /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,8 +325,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36851D022A7ABF770045883B /* EssentialAppUITests.swift in Sources */,
-				36851D042A7ABF770045883B /* EssentialAppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +542,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9VQ2M3N7PA;
@@ -538,6 +552,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leandrofournier.EssentialAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EssentialApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EssentialApp";
@@ -549,6 +564,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9VQ2M3N7PA;
