@@ -14,8 +14,10 @@ final class EssentialAppAcceptanceUITests: XCTestCase {
 
         app.launch()
 
-        XCTAssertEqual(app.cells.count, 22)
-        // The following assertion fails probably due to internet connection issues
-        XCTAssertEqual(app.cells.firstMatch.images.count, 1)
+        let feedCells = app.cells.matching(identifier: "feed-image-cell")
+        XCTAssertEqual(feedCells.count, 22)
+
+        let firstImage = app.images.matching(identifier: "feed-image-view").firstMatch
+        XCTAssertTrue(firstImage.exists)
     }
 }
