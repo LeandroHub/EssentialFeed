@@ -46,16 +46,12 @@ extension XCTestCase {
 
     private func makeSnapshotURLForRecording(named name: String, file: StaticString) -> URL {
         let path = URL(filePath: String(describing: file)).deletingLastPathComponent()
-        return makeSnapshotURL(named: name, atBasePath: path)
+        return path.appending(component: "iPhoneSnapshots").appending(component: "\(name).png")
     }
 
     private func makeSnapshotURLForAssertion(named name: String) -> URL {
-        let path = Bundle(for: FeedSnapshotTests.self).bundleURL
-        return makeSnapshotURL(named: name, atBasePath: path)
-    }
-
-    private func makeSnapshotURL(named name: String, atBasePath path: URL) -> URL {
-        return path.appending(component: "iPhoneSnapshots").appending(component: "\(name).png")
+        let path = Bundle(for: FeedSnapshotTests.self)
+        return path.url(forResource: name, withExtension: "png")!
     }
 
     private func makeSnapshotData(for snapshot: UIImage, file: StaticString, line: UInt) -> Data? {
