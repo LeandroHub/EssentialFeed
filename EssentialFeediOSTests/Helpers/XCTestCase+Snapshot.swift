@@ -10,11 +10,7 @@ import XCTest
 extension XCTestCase {
 
     func assert(snapshot: UIImage, named name: String, file: StaticString = #file, line: UInt = #line) {
-        guard let snapshotURL = makeSnapshotURL(named: name) else {
-            XCTFail("Couldn't find snapshot for \(name)", file: file, line: line)
-            return
-        }
-
+        let snapshotURL = makeSnapshotURLForAssertion(named: name)
         let snapshotData = makeSnapshotData(for: snapshot, file: file, line: line)
 
         guard let storedSnapshotData = try? Data(contentsOf: snapshotURL) else {
@@ -33,11 +29,7 @@ extension XCTestCase {
     }
 
     func record(snapshot: UIImage, named name: String, file: StaticString = #file, line: UInt = #line) {
-        guard let snapshotURL = makeSnapshotURL(named: name) else {
-            XCTFail("Couldn't create snapshot for \(name)", file: file, line: line)
-            return
-        }
-
+        let snapshotURL = makeSnapshotURLForRecording(named: name, file: file)
         let snapshotData = makeSnapshotData(for: snapshot, file: file, line: line)
 
         do {
@@ -52,10 +44,18 @@ extension XCTestCase {
         }
     }
 
-    private func makeSnapshotURL(named name: String) -> URL? {
-        return Bundle(for: FeedSnapshotTests.self).bundleURL
-            .appending(path: "Snapshots")
-            .appending(path: "\(name).png")
+    private func makeSnapshotURLForRecording(named name: String, file: StaticString) -> URL {
+        let path = URL(filePath: String(describing: file)).deletingLastPathComponent()
+        return makeSnapshotURL(named: name, atBasePath: path)
+    }
+
+    private func makeSnapshotURLForAssertion(named name: String) -> URL {
+        let path = Bundle(for: FeedSnapshotTests.self).bundleURL
+        return makeSnapshotURL(named: name, atBasePath: path)
+    }
+
+    private func makeSnapshotURL(named name: String, atBasePath path: URL) -> URL {
+        return path.appending(component: "Snapshots").appending(component: "\(name).png")
     }
 
     private func makeSnapshotData(for snapshot: UIImage, file: StaticString, line: UInt) -> Data? {
