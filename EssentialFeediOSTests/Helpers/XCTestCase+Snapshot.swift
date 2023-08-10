@@ -10,7 +10,11 @@ import XCTest
 extension XCTestCase {
 
     func assert(snapshot: UIImage, named name: String, file: StaticString = #file, line: UInt = #line) {
-        let snapshotURL = makeSnapshotURL(named: name, file: file)
+        guard let snapshotURL = makeSnapshotURL(named: name) else {
+            XCTFail("Couldn't find snapshot for \(name)", file: file, line: line)
+            return
+        }
+
         let snapshotData = makeSnapshotData(for: snapshot, file: file, line: line)
 
         guard let storedSnapshotData = try? Data(contentsOf: snapshotURL) else {
@@ -29,7 +33,11 @@ extension XCTestCase {
     }
 
     func record(snapshot: UIImage, named name: String, file: StaticString = #file, line: UInt = #line) {
-        let snapshotURL = makeSnapshotURL(named: name, file: file)
+        guard let snapshotURL = makeSnapshotURL(named: name) else {
+            XCTFail("Couldn't create snapshot for \(name)", file: file, line: line)
+            return
+        }
+
         let snapshotData = makeSnapshotData(for: snapshot, file: file, line: line)
 
         do {
@@ -44,11 +52,10 @@ extension XCTestCase {
         }
     }
 
-    private func makeSnapshotURL(named name: String, file: StaticString) -> URL {
-        return URL(fileURLWithPath: String(describing: file))
-            .deletingLastPathComponent()
-            .appendingPathComponent("Snapshots")
-            .appendingPathComponent("\(name).png")
+    private func makeSnapshotURL(named name: String) -> URL? {
+        return Bundle(for: FeedSnapshotTests.self).bundleURL
+            .appending(path: "Snapshots")
+            .appending(path: "\(name).png")
     }
 
     private func makeSnapshotData(for snapshot: UIImage, file: StaticString, line: UInt) -> Data? {
