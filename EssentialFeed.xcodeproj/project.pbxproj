@@ -19,6 +19,14 @@
 		363E88C029D2729C0077E089 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363E88BF29D2729C0077E089 /* URLSessionHTTPClientTests.swift */; };
 		365700F82A1668FF000EE52E /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365700F72A1668FF000EE52E /* RemoteFeedItem.swift */; };
 		365700FA2A166941000EE52E /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365700F92A166941000EE52E /* LocalFeedImage.swift */; };
+		365768912A85790C006CCB02 /* FEED_WITH_ERROR_MESSAGE_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 365768892A85790C006CCB02 /* FEED_WITH_ERROR_MESSAGE_dark.png */; };
+		365768922A85790C006CCB02 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3657688A2A85790C006CCB02 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png */; };
+		365768932A85790C006CCB02 /* FEED_WITH_CONTENT_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3657688B2A85790C006CCB02 /* FEED_WITH_CONTENT_dark.png */; };
+		365768942A85790C006CCB02 /* EMPTY_FEED_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 3657688C2A85790C006CCB02 /* EMPTY_FEED_light.png */; };
+		365768952A85790C006CCB02 /* FEED_WITH_CONTENT_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 3657688D2A85790C006CCB02 /* FEED_WITH_CONTENT_light.png */; };
+		365768962A85790C006CCB02 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 3657688E2A85790C006CCB02 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png */; };
+		365768972A85790C006CCB02 /* FEED_WITH_ERROR_MESSAGE_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 3657688F2A85790C006CCB02 /* FEED_WITH_ERROR_MESSAGE_light.png */; };
+		365768982A85790C006CCB02 /* EMPTY_FEED_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 365768902A85790C006CCB02 /* EMPTY_FEED_dark.png */; };
 		365F26D92A780A3400213670 /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F26D82A780A3400213670 /* HTTPClientSpy.swift */; };
 		365F26DC2A780B2800213670 /* RemoteFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F26DB2A780B2800213670 /* RemoteFeedImageDataLoader.swift */; };
 		365F26DF2A7811BF00213670 /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F26DD2A78110600213670 /* HTTPURLResponse+StatusCode.swift */; };
@@ -88,7 +96,6 @@
 		36F935492A4C9B50004E6F0D /* ManagedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F935482A4C9B50004E6F0D /* ManagedCache.swift */; };
 		36F9354B2A4C9BB1004E6F0D /* ManagedFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9354A2A4C9BB1004E6F0D /* ManagedFeedImage.swift */; };
 		36FD4E0B2A584AC7000B2024 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E889529CA7A9B0077E089 /* EssentialFeed.framework */; platformFilter = ios; };
-		36FD4E0C2A584AC7000B2024 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E889529CA7A9B0077E089 /* EssentialFeed.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36FD4E112A584BF8000B2024 /* XCTTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367C43AB29D511B3008CFC31 /* XCTTestCase+MemoryLeakTracking.swift */; };
 		36FD4E132A586849000B2024 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD4E122A586849000B2024 /* FeedViewController.swift */; };
 		36FD4E152A58B4C4000B2024 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD4E142A58B4C4000B2024 /* FeedImageCell.swift */; };
@@ -134,20 +141,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		36FD4E0F2A584AC7000B2024 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				36FD4E0C2A584AC7000B2024 /* EssentialFeed.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		363E889529CA7A9B0077E089 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		363E889829CA7A9B0077E089 /* EssentialFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed.h; sourceTree = "<group>"; };
@@ -162,6 +155,14 @@
 		363E88BF29D2729C0077E089 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		365700F72A1668FF000EE52E /* RemoteFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedItem.swift; sourceTree = "<group>"; };
 		365700F92A166941000EE52E /* LocalFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImage.swift; sourceTree = "<group>"; };
+		365768892A85790C006CCB02 /* FEED_WITH_ERROR_MESSAGE_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_ERROR_MESSAGE_dark.png; sourceTree = "<group>"; };
+		3657688A2A85790C006CCB02 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_FAILED_IMAGE_LOADING_dark.png; sourceTree = "<group>"; };
+		3657688B2A85790C006CCB02 /* FEED_WITH_CONTENT_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_CONTENT_dark.png; sourceTree = "<group>"; };
+		3657688C2A85790C006CCB02 /* EMPTY_FEED_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EMPTY_FEED_light.png; sourceTree = "<group>"; };
+		3657688D2A85790C006CCB02 /* FEED_WITH_CONTENT_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_CONTENT_light.png; sourceTree = "<group>"; };
+		3657688E2A85790C006CCB02 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_FAILED_IMAGE_LOADING_light.png; sourceTree = "<group>"; };
+		3657688F2A85790C006CCB02 /* FEED_WITH_ERROR_MESSAGE_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_ERROR_MESSAGE_light.png; sourceTree = "<group>"; };
+		365768902A85790C006CCB02 /* EMPTY_FEED_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EMPTY_FEED_dark.png; sourceTree = "<group>"; };
 		365F26D82A780A3400213670 /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 		365F26DB2A780B2800213670 /* RemoteFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedImageDataLoader.swift; sourceTree = "<group>"; };
 		365F26DD2A78110600213670 /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
@@ -378,6 +379,21 @@
 			path = "Feed API";
 			sourceTree = "<group>";
 		};
+		365768882A85790C006CCB02 /* iPhoneSnapshots */ = {
+			isa = PBXGroup;
+			children = (
+				365768892A85790C006CCB02 /* FEED_WITH_ERROR_MESSAGE_dark.png */,
+				3657688A2A85790C006CCB02 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png */,
+				3657688B2A85790C006CCB02 /* FEED_WITH_CONTENT_dark.png */,
+				3657688C2A85790C006CCB02 /* EMPTY_FEED_light.png */,
+				3657688D2A85790C006CCB02 /* FEED_WITH_CONTENT_light.png */,
+				3657688E2A85790C006CCB02 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png */,
+				3657688F2A85790C006CCB02 /* FEED_WITH_ERROR_MESSAGE_light.png */,
+				365768902A85790C006CCB02 /* EMPTY_FEED_dark.png */,
+			);
+			path = iPhoneSnapshots;
+			sourceTree = "<group>";
+		};
 		365F26DA2A780A3A00213670 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +422,7 @@
 		367114A62A55E315001A7C46 /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				365768882A85790C006CCB02 /* iPhoneSnapshots */,
 				36C507332A840643006145A3 /* Helpers */,
 				367114B02A55E3B9001A7C46 /* EssentialFeediOS.xctestplan */,
 				36C5072D2A840440006145A3 /* FeedSnapshotTests.swift */,
@@ -662,7 +679,6 @@
 				367114972A55E314001A7C46 /* Sources */,
 				367114982A55E314001A7C46 /* Frameworks */,
 				367114992A55E314001A7C46 /* Resources */,
-				36FD4E0F2A584AC7000B2024 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -814,6 +830,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365768962A85790C006CCB02 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png in Resources */,
+				365768982A85790C006CCB02 /* EMPTY_FEED_dark.png in Resources */,
+				365768942A85790C006CCB02 /* EMPTY_FEED_light.png in Resources */,
+				365768912A85790C006CCB02 /* FEED_WITH_ERROR_MESSAGE_dark.png in Resources */,
+				365768932A85790C006CCB02 /* FEED_WITH_CONTENT_dark.png in Resources */,
+				365768952A85790C006CCB02 /* FEED_WITH_CONTENT_light.png in Resources */,
+				365768972A85790C006CCB02 /* FEED_WITH_ERROR_MESSAGE_light.png in Resources */,
+				365768922A85790C006CCB02 /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1306,6 +1330,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9VQ2M3N7PA;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1314,6 +1339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leandrofournier.EssentialFeediOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRIP_PNG_TEXT = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1327,6 +1353,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9VQ2M3N7PA;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1335,6 +1362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leandrofournier.EssentialFeediOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRIP_PNG_TEXT = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
