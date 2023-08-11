@@ -88,7 +88,6 @@
 		36F935492A4C9B50004E6F0D /* ManagedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F935482A4C9B50004E6F0D /* ManagedCache.swift */; };
 		36F9354B2A4C9BB1004E6F0D /* ManagedFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9354A2A4C9BB1004E6F0D /* ManagedFeedImage.swift */; };
 		36FD4E0B2A584AC7000B2024 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E889529CA7A9B0077E089 /* EssentialFeed.framework */; platformFilter = ios; };
-		36FD4E0C2A584AC7000B2024 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 363E889529CA7A9B0077E089 /* EssentialFeed.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36FD4E112A584BF8000B2024 /* XCTTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367C43AB29D511B3008CFC31 /* XCTTestCase+MemoryLeakTracking.swift */; };
 		36FD4E132A586849000B2024 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD4E122A586849000B2024 /* FeedViewController.swift */; };
 		36FD4E152A58B4C4000B2024 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD4E142A58B4C4000B2024 /* FeedImageCell.swift */; };
@@ -133,20 +132,6 @@
 			remoteInfo = EssentialFeed;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		36FD4E0F2A584AC7000B2024 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				36FD4E0C2A584AC7000B2024 /* EssentialFeed.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		363E889529CA7A9B0077E089 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -662,7 +647,6 @@
 				367114972A55E314001A7C46 /* Sources */,
 				367114982A55E314001A7C46 /* Frameworks */,
 				367114992A55E314001A7C46 /* Resources */,
-				36FD4E0F2A584AC7000B2024 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
